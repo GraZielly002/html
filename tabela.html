@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table, th, td {border: 1px solid #000;}
+        th, td {padding: 7px;}
+        .nome{background-color: chartreuse;}
+        .email{background-color: aquamarine;}
+        .telefone{background-color: aqua;}
+        .cargo{background-color: blueviolet;}
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table><!--Tabelas-->
+        <caption>Cadastro de clientes</caption><!--Legenda-->
+
+        <colgroup><!--Recurso que serve para criar um grupo de colunas e formatar individualmente-->
+            <col class="nome"><!--Automaticamente reconhece a coluna-->
+            <col class="email">
+            <col class="telefone">
+            <col class="cargo">
+        </colgroup>
+
+        <thead><!--Cabeçalho-->
+        <tr><!--Linhas-->
+            <th>Nome:</th><!--Titulo de cada coluna-->
+            <th>Email:</th>
+            <th>Telefone:</th>
+            <th>Cargo:</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Joana</td><!--Conteudo-->
+            <td>joanabanana@gmail.com</td>
+            <td>(40)99293****</td>
+            <td rowspan="2">Desenvolvedor Web</td><!--rowspan faz ocupar duas linhas-->
+        </tr>
+        <tr>
+            <td>Jose</td>
+            <td>jo237@gmail.com</td>
+            <td>(34)99293****</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <td colspan="4">Total: 2</td><!--colspan faz com que essa informação ocupe 3 colunas-->
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
