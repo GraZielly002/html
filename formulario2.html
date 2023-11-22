@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!--Required, Autofocus, Disable-->
+</head>
+<body>
+    <form action="exemplo.php" method="POST"><!--action informa a pagina que vai receber as informações / method: get envia suas informaçoes pela url; post envia as informações encapsuladas sem que o visitante veja -->
+        <fieldset> <!--Agrupar-->
+        <legend>Informações pessoais</legend><!--Legenda-->
+        <p>Nome:</p>
+        <input type="text" name="nome" required autofocus disabled><br><!--required: deixa o campo obrigatorio / autofocus: ao recarregar a página faz com que determinado campo ganhe foco / disabled: deixa o campo desabilitado-->
+        <p>Senha:</p>
+        <input type="password" name="senha"><br>
+        <input type="submit" name="btn-enviar" value="Enviar">
+        </fieldset>
+       </form> 
+</body>
+</html>

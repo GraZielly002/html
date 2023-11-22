@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!--Input Types: Number, Range, Color-->
+</head>
+<body>
+    <form action="exemplo.php" method="POST"><!--action informa a pagina que vai receber as informações / method: get envia suas informaçoes pela url; post envia as informações encapsuladas sem que o visitante veja -->
+        <fieldset> <!--Agrupar-->
+        <legend>Informações pessoais</legend><!--Legenda-->
+        <p>Nome:</p>
+        <input type="text" name="nome" required autofocus maxlength="5"><br><!--required: deixa o campo obrigatorio / autofocus: ao recarregar a página faz com que determinado campo ganhe foco / disabled: deixa o campo desabilitado / maxlength: indica o maximo de caracteres-->
+        <p>Senha:</p>
+        <input type="password" name="senha"><br>
+        <p>Email:</p>
+        <input type="email" name="email" required><br>
+
+        <p>Time:</p>
+        <input type="radio" name="time" value="flamengo">Flamengo <br><!--Faz o usuario escolher uma entre varias opções-->
+        <input type="radio" name="time" value="corinthias" checked>Corinthias <br><!--checked: ao iniciar a pagina faz com que venha marcado por padrão-->
+        <input type="radio" name="time" value="sao-paulo">São Paulo <br>
+        <br>
+
+        <p>Cores:</p>
+        <input type="checkbox" name="cores" value="azul">Azul <br><!--Faz o usuario escolher varias opções-->
+        <input type="checkbox" name="cores" value="preto" checked>Preto <br>
+        <input type="checkbox" name="cores" value="vermelho">Vermelho <br>
+        <br>
+
+        <p>Quantidade:</p>
+        <input type="number" name="quantidade" min="0" max="500" step="10"><br><!--step: vai permitir intervalo de dez em dez-->
+        <br>
+        <input type="range" name="quantidade"><!--slider-->
+        <br>
+
+        <p>Cor:</p>
+        <input type="color" name="cor"><br>
+        <br>
+        
+        <input type="submit" name="btn-enviar" value="Enviar">
+        </fieldset>
+       </form> 
+</body>
+</html>
